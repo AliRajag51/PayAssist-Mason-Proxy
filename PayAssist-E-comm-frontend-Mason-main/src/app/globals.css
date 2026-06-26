@@ -1,0 +1,113 @@
+/* MASON SKY — Tailwind v4 design system.
+   - Tokens live in @theme (colors, fonts, animations, custom utilities).
+   - The classic v3 setup from `tailwind.config.ts` is intentionally NOT used; v4
+     reads tokens straight from this CSS file.
+   - Preflight stays on (v4 includes it by default — Mason's small reset overrides
+     where it needs to). */
+@import "tailwindcss";
+
+@theme {
+  /* Brand palette — cream/sand/ink/coffee/taupe. */
+  --color-cream: #FAF7F2;
+  --color-sand: #F4EFE7;
+  --color-sand-2: #E8DFD2;
+  --color-sand-3: #D9CDBA;
+  --color-ink: #2B2723;
+  --color-ink-2: #1A1714;
+  --color-coffee: #5C4733;
+  --color-coffee-2: #4A463F;
+  --color-coffee-3: #6E665B;
+  --color-coffee-4: #8C8276;
+  --color-taupe: #A89F94;
+
+  /* Type stack — variables come from next/font in layout.tsx. */
+  --font-display: var(--font-playfair), "Playfair Display", serif;
+  --font-serif: var(--font-cormorant), "Cormorant Garamond", serif;
+  --font-sans: var(--font-inter), "Inter", system-ui, sans-serif;
+  --font-mono: var(--font-manrope), "Manrope", ui-monospace, monospace;
+
+  /* Animations (utility names — `animate-kenburns`, `animate-drawer-in`, …). */
+  --animate-kenburns: kenburns 22s ease-out forwards;
+  --animate-drawer-in: drawer-in 0.42s cubic-bezier(0.22, 1, 0.36, 1);
+  --animate-ms-fade: ms-fade 0.3s ease;
+  --animate-ms-pop: ms-pop 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes kenburns {
+  from { transform: scale(1.04); }
+  to { transform: scale(1.14); }
+}
+@keyframes drawer-in {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+@keyframes ms-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes ms-pop {
+  from { opacity: 0; transform: scale(0.96); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  ::selection {
+    background: var(--color-coffee);
+    color: var(--color-cream);
+  }
+  input::placeholder {
+    color: var(--color-taupe);
+  }
+}
+
+@layer components {
+  /* Reusable form field — used across checkout. Mason's only shared component class. */
+  .ms-field {
+    width: 100%;
+    background: #fff;
+    border: 1px solid color-mix(in srgb, var(--color-coffee) 25%, transparent);
+    outline: none;
+    padding: 14px 15px;
+    font-size: 14px;
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    transition: border-color 0.2s;
+  }
+  .ms-field:focus {
+    border-color: var(--color-coffee);
+  }
+
+  /* PayPal CardFields field container. The cross-origin iframe PayPal renders
+     inside is the actual hit area, so it must extend to the border — no
+     container padding. Internal text padding is set inside the iframe on the
+     <input> itself via the `style` prop in checkout-payment.tsx. */
+  .ms-paypal-field {
+    width: 100%;
+    background: #fff;
+    border: 1px solid color-mix(in srgb, var(--color-coffee) 25%, transparent);
+    outline: none;
+    height: 48px;
+    overflow: hidden;
+    padding: 0;
+    transition: border-color 0.2s;
+  }
+  .ms-paypal-field:focus-within {
+    border-color: var(--color-coffee);
+  }
+  .ms-paypal-field iframe {
+    width: 100% !important;
+    height: 48px !important;
+    border: none !important;
+    display: block;
+    background: transparent !important;
+  }
+}
