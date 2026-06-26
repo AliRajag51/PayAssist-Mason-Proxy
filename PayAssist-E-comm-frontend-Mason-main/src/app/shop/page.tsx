@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { Suspense, useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { AnnouncementBar } from "@components/mason/AnnouncementBar";
 import { Header } from "@components/mason/Header";
@@ -36,7 +36,7 @@ const materials = ["Stoneware", "Linen", "Brass", "Alabaster", "Seagrass", "Trav
 
 const norm = (s: string) => s.toLowerCase().replace(/[^a-z]/g, "");
 
-export default function ShopPage() {
+function ShopPageContent() {
   const { count, add } = useCart();
   const { message, flash } = useToast();
   const [wish, setWish] = useState<Record<string, boolean>>({});
@@ -208,5 +208,13 @@ export default function ShopPage() {
       <QuickViewModal product={quick} onClose={closeQuick} onAdd={addToCart} />
       <Toast message={message} />
     </>
+  );
+}
+
+export default function ShopPage() {
+  return (
+    <Suspense fallback={null}>
+      <ShopPageContent />
+    </Suspense>
   );
 }
