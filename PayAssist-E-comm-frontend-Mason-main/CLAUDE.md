@@ -30,8 +30,8 @@ shape, and the PayAssist backend contract.
   and is the authoritative visual. Do not redesign it, do not introduce a second
   styling system (e.g. shadcn) — it would alter the look.
 - **State (Phase 1):** the storefront ships with a local `useCart` hook
-  (`src/components/mason/useCart.ts`) and mock products
-  (`src/components/mason/products.ts`). Cart persists to localStorage under
+  (`src/components/homebase/useCart.ts`) and mock products
+  (`src/components/homebase/products.ts`). Cart persists to localStorage under
   `ms_cart`.
 - **Backend adapter (Phase 2):** the per-store catalog/auth/payment files
   (`catalog-source.ts`, `schemas.ts`, `backend-types.ts`, `auth-source.ts`,
@@ -61,10 +61,10 @@ Mirror Sona exactly:
 
 ```
 app/                  Routes + layout.tsx + globals.css. Route page.tsx are
-                      thin; UI lives in components/mason/.
+                      thin; UI lives in components/homebase/.
   api/[[...path]]/route.ts   backend proxy (same-origin → INTERNAL_API_BASE_URL)
   error.tsx, not-found.tsx   on-brand fallbacks
-components/mason/      All storefront UI + the integration layer:
+components/homebase/      All storefront UI + the integration layer:
   Header.tsx Footer.tsx AnnouncementBar.tsx
   ProductCard.tsx CartDrawer.tsx QuickViewModal.tsx Toast.tsx
   useCart.ts useReveal.ts useToast.ts          UI hooks (Phase 1 local state)
@@ -83,7 +83,7 @@ targeted; prefer existing patterns and the design tokens over ad-hoc values.
 
 ## Rules
 
-- TypeScript, strict. Keep new storefront code under `components/mason/`. The
+- TypeScript, strict. Keep new storefront code under `components/homebase/`. The
   per-store backend coupling stays in `catalog-source.ts` /
   `payment-source.ts` / `auth-source.ts`; components consume props / hooks /
   (future) contexts.

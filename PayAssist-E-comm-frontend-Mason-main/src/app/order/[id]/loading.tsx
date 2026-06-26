@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { AnnouncementBar } from "@components/mason/AnnouncementBar";
-import { FooterSlim } from "@components/mason/Footer";
+import { AnnouncementBar } from "@components/homebase/AnnouncementBar";
+import { FooterSlim } from "@components/homebase/Footer";
 
 export default function Loading() {
   return (

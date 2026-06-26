@@ -1,6 +1,6 @@
 "use client";
 
-import { ContentPage } from "@components/mason/ContentPage";
+import { ContentPage } from "@components/homebase/ContentPage";
 
 export default function PrivacyPage() {
   return (

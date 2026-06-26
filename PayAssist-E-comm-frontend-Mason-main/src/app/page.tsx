@@ -2,16 +2,16 @@
 
 import { useRef, useState } from "react";
 import Link from "next/link";
-import { AnnouncementBar } from "@components/mason/AnnouncementBar";
-import { Header } from "@components/mason/Header";
-import { Footer } from "@components/mason/Footer";
-import { ProductCard } from "@components/mason/ProductCard";
-import { QuickViewModal } from "@components/mason/QuickViewModal";
-import { Toast } from "@components/mason/Toast";
-import { useCart } from "@components/mason/useCart";
-import { useReveal } from "@components/mason/useReveal";
-import { useToast } from "@components/mason/useToast";
-import { products } from "@components/mason/products";
+import { AnnouncementBar } from "@components/homebase/AnnouncementBar";
+import { Header } from "@components/homebase/Header";
+import { Footer } from "@components/homebase/Footer";
+import { ProductCard } from "@components/homebase/ProductCard";
+import { QuickViewModal } from "@components/homebase/QuickViewModal";
+import { Toast } from "@components/homebase/Toast";
+import { useCart } from "@components/homebase/useCart";
+import { useReveal } from "@components/homebase/useReveal";
+import { useToast } from "@components/homebase/useToast";
+import { products } from "@components/homebase/products";
 
 // Each card carries the shop-filter `key` so clicking a category opens the shop
 // pre-filtered to that section (no cross-category landing).

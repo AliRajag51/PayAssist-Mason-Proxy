@@ -2,10 +2,10 @@
    (server component). Mirrors Sona's structure (status timeline + items +
    summary + shipping) in Mason's cream/ink/coffee design language. */
 import Link from "next/link";
-import { AnnouncementBar } from "@components/mason/AnnouncementBar";
-import { FooterSlim } from "@components/mason/Footer";
-import { money } from "@components/mason/types";
-import type { BackendOrder } from "@components/mason/schemas";
+import { AnnouncementBar } from "@components/homebase/AnnouncementBar";
+import { FooterSlim } from "@components/homebase/Footer";
+import { money } from "@components/homebase/types";
+import type { BackendOrder } from "@components/homebase/schemas";
 
 const TIMELINE = ["Order confirmed", "Packed", "Shipped", "Out for delivery", "Delivered"];
 const REACHED: Record<string, number> = { pending: 0, processing: 2, delivered: 4 };

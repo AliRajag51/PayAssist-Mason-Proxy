@@ -1,6 +1,6 @@
 "use client";
 
-import { ContentPage } from "@components/mason/ContentPage";
+import { ContentPage } from "@components/homebase/ContentPage";
 
 const posts = [
   { tag: "Styling", title: "How to layer a living room", date: "May 2026", excerpt: "Start with one anchor piece, then build texture outward — wool, linen, oak and a little patina." },

@@ -2,7 +2,7 @@
  * The Stripe/PayPal SDKs are used in the UI only; the actual create/capture and
  * webhook verification happen on the backend (no client-side capture).
  * Mirrors the Sona reference 1:1 — the backend contract is shared. */
-import type { OrderPayload } from "@components/mason/backend-types";
+import type { OrderPayload } from "@components/homebase/backend-types";
 
 function clientApiBase(): string {
   return (process.env.NEXT_PUBLIC_API_BASE_URL || "").replace(/\/$/, "");

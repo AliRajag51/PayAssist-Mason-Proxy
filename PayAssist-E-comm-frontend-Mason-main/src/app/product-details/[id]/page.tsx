@@ -2,15 +2,15 @@
 
 import { use, useRef, useState } from "react";
 import Link from "next/link";
-import { AnnouncementBar } from "@components/mason/AnnouncementBar";
-import { Header } from "@components/mason/Header";
-import { Footer } from "@components/mason/Footer";
-import { CartDrawer } from "@components/mason/CartDrawer";
-import { Toast } from "@components/mason/Toast";
-import { useCart } from "@components/mason/useCart";
-import { useToast } from "@components/mason/useToast";
-import { money } from "@components/mason/types";
-import { products as catalog } from "@components/mason/products";
+import { AnnouncementBar } from "@components/homebase/AnnouncementBar";
+import { Header } from "@components/homebase/Header";
+import { Footer } from "@components/homebase/Footer";
+import { CartDrawer } from "@components/homebase/CartDrawer";
+import { Toast } from "@components/homebase/Toast";
+import { useCart } from "@components/homebase/useCart";
+import { useToast } from "@components/homebase/useToast";
+import { money } from "@components/homebase/types";
+import { products as catalog } from "@components/homebase/products";
 
 const finishDefs = [
   { key: "brass", label: "Brass · Opal Glass", swatch: "#C7A878" },

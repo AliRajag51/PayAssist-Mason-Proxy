@@ -14,7 +14,7 @@
  * rating/reviews have no backend column -> overlaid via `data.ts` if Mason
  * starts publishing static review numbers.
  */
-import { findByName } from "@components/mason/data";
+import { findByName } from "@components/homebase/data";
 import {
   backendProductSchema,
   itemInfoSchema,
@@ -24,14 +24,14 @@ import {
   type BackendProduct,
   type BackendOrder,
   type BackendCoupon,
-} from "@components/mason/schemas";
+} from "@components/homebase/schemas";
 import type {
   UIProduct,
   UIProductDetail,
   OrderPayload,
   CartItem,
   AppliedCoupon,
-} from "@components/mason/backend-types";
+} from "@components/homebase/backend-types";
 
 function apiBase(): string {
   return (

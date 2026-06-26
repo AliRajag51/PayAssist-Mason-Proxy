@@ -15,7 +15,7 @@ import {
   PayPalCVVField,
   usePayPalCardFields,
 } from "@paypal/react-paypal-js";
-import { placeOrder } from "@components/mason/catalog-source";
+import { placeOrder } from "@components/homebase/catalog-source";
 import {
   stripePublishableKey,
   paypalClientId,
@@ -26,8 +26,8 @@ import {
   createPaypalOrder,
   capturePaypalOrder,
   type PaymentLineItem,
-} from "@components/mason/payment-source";
-import type { OrderPayload } from "@components/mason/backend-types";
+} from "@components/homebase/payment-source";
+import type { OrderPayload } from "@components/homebase/backend-types";
 
 export type CheckoutContext =
   | { ok: false; error: string }

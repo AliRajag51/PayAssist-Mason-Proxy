@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import OrderDetail from "@components/mason/order-detail";
-import { fetchOrderById } from "@components/mason/catalog-source";
+import OrderDetail from "@components/homebase/order-detail";
+import { fetchOrderById } from "@components/homebase/catalog-source";
 
 export const dynamic = "force-dynamic";
 

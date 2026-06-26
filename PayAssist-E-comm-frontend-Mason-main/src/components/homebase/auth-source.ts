@@ -6,7 +6,7 @@ import {
   orderSchema,
   type User,
   type BackendOrder,
-} from "@components/mason/schemas";
+} from "@components/homebase/schemas";
 
 export interface AuthSession {
   user: User;

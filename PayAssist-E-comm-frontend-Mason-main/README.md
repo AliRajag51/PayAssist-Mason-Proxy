@@ -13,9 +13,8 @@ PayAssist backend contract — only the UI/UX is HomeBase Supply's own.
   Cormorant Garamond (serif), Inter (sans), Manrope (mono) — all via `next/font`.
 - **Bun** for installs + dev/build.
 - **Zod** schemas + per-store catalog/payment/auth adapters (see
-  `src/components/mason/`), aligned 1:1 with the Sona reference so the same
-  PayAssist backend handles both stores. (The folder is named `mason/` for
-  historical reasons — the storefront itself is HomeBase Supply.)
+  `src/components/homebase/`), aligned 1:1 with the Sona reference so the same
+  PayAssist backend handles both stores.
 
 ## Run locally
 
@@ -48,9 +47,9 @@ bun run build
 
 ```
 src/
-  app/                Routes (App Router). Pages are thin; UI/state lives in components/mason/.
+  app/                Routes (App Router). Pages are thin; UI/state lives in components/homebase/.
     api/[[...path]]   Backend proxy (same-origin → INTERNAL_API_BASE_URL)
-  components/mason/   All HomeBase Supply UI + the per-store backend adapter
+  components/homebase/   All HomeBase Supply UI + the per-store backend adapter
     Header.tsx Footer.tsx AnnouncementBar.tsx ProductCard.tsx CartDrawer.tsx
     QuickViewModal.tsx Toast.tsx
     useCart.ts useReveal.ts useToast.ts            ← UI hooks
@@ -63,7 +62,7 @@ public/               static assets (favicon, etc.)
 
 ## Backend wiring (Phase 2)
 
-The catalog/auth/payment adapters under `src/components/mason/` mirror the Sona
+The catalog/auth/payment adapters under `src/components/homebase/` mirror the Sona
 reference and call the shared PayAssist backend. They are **not yet wired** into
 the UI — HomeBase Supply currently uses local mock data from `products.ts`. To swap:
 

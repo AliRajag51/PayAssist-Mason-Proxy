@@ -2,17 +2,17 @@
 
 import Link from "next/link";
 import { useMemo, useRef, useState } from "react";
-import { useCart } from "@components/mason/useCart";
-import { money } from "@components/mason/types";
-import { products } from "@components/mason/products";
-import CheckoutPayment, { type CheckoutContext } from "@components/mason/checkout-payment";
-import { buildOrderPayload, validateCoupon } from "@components/mason/catalog-source";
+import { useCart } from "@components/homebase/useCart";
+import { money } from "@components/homebase/types";
+import { products } from "@components/homebase/products";
+import CheckoutPayment, { type CheckoutContext } from "@components/homebase/checkout-payment";
+import { buildOrderPayload, validateCoupon } from "@components/homebase/catalog-source";
 import {
   isStripeConfigured,
   isPaypalConfigured,
-} from "@components/mason/payment-source";
-import type { CartItem, AppliedCoupon } from "@components/mason/backend-types";
-import type { CartLine } from "@components/mason/types";
+} from "@components/homebase/payment-source";
+import type { CartItem, AppliedCoupon } from "@components/homebase/backend-types";
+import type { CartLine } from "@components/homebase/types";
 
 const shipDefs = [
   { key: "standard", title: "Standard", sub: "5–7 business days", price: 0 },
