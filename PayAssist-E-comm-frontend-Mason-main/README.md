@@ -1,20 +1,21 @@
-# Mason Sky — Storefront
+# HomeBase Supply — Storefront
 
-The Mason Sky Enterprises customer storefront. Built on the same technical
+The HomeBase Supply customer storefront. Built on the same technical
 scaffold as the SONA storefront so both share configs, deployment shape, and the
-PayAssist backend contract — only the UI/UX is Mason's own.
+PayAssist backend contract — only the UI/UX is HomeBase Supply's own.
 
 ## Stack
 
 - **Next.js 16** (App Router, Turbopack), **React 19**, **TypeScript strict**.
 - **Tailwind CSS v4** — design tokens declared in `src/app/globals.css` `@theme`
-  (no `tailwind.config.*` file). Mason brand palette: `cream`, `sand[-2/3]`,
+  (no `tailwind.config.*` file). HomeBase Supply brand palette: `cream`, `sand[-2/3]`,
   `ink[-2]`, `coffee[-2/3/4]`, `taupe`. Type stack: Playfair Display (display),
   Cormorant Garamond (serif), Inter (sans), Manrope (mono) — all via `next/font`.
 - **Bun** for installs + dev/build.
 - **Zod** schemas + per-store catalog/payment/auth adapters (see
   `src/components/mason/`), aligned 1:1 with the Sona reference so the same
-  PayAssist backend handles both stores.
+  PayAssist backend handles both stores. (The folder is named `mason/` for
+  historical reasons — the storefront itself is HomeBase Supply.)
 
 ## Run locally
 
@@ -49,11 +50,11 @@ bun run build
 src/
   app/                Routes (App Router). Pages are thin; UI/state lives in components/mason/.
     api/[[...path]]   Backend proxy (same-origin → INTERNAL_API_BASE_URL)
-  components/mason/   All Mason UI + the per-store backend adapter
+  components/mason/   All HomeBase Supply UI + the per-store backend adapter
     Header.tsx Footer.tsx AnnouncementBar.tsx ProductCard.tsx CartDrawer.tsx
     QuickViewModal.tsx Toast.tsx
     useCart.ts useReveal.ts useToast.ts            ← UI hooks
-    products.ts types.ts                           ← Mason product/cart shapes (UI layer)
+    products.ts types.ts                           ← product/cart shapes (UI layer)
     catalog-source.ts schemas.ts backend-types.ts  ← backend adapter (Phase 2)
     auth-source.ts payment-source.ts data.ts       ← backend adapter (Phase 2)
 scripts/              smoke.mjs (storefront/backend reachability)
@@ -64,7 +65,7 @@ public/               static assets (favicon, etc.)
 
 The catalog/auth/payment adapters under `src/components/mason/` mirror the Sona
 reference and call the shared PayAssist backend. They are **not yet wired** into
-the UI — Mason currently uses local mock data from `products.ts`. To swap:
+the UI — HomeBase Supply currently uses local mock data from `products.ts`. To swap:
 
 1. Have the layout `await fetchProducts()` and pass it down via a `CatalogProvider`.
 2. Replace the local `useCart` with a `cart-context` that emits backend payloads

@@ -24,8 +24,8 @@ export default function OrderDetail({ order }: { order: BackendOrder | null }) {
         <header className="border-b border-coffee/15 bg-cream">
           <div className="max-w-[1200px] mx-auto px-10 h-[78px] flex items-center">
             <Link href="/" className="text-left no-underline text-ink">
-              <div className="font-display text-[22px] font-semibold tracking-[0.06em] leading-none">MASON SKY</div>
-              <div className="text-[9px] tracking-[0.42em] uppercase text-taupe mt-[3px]">Enterprises</div>
+              <div className="font-display text-[22px] font-semibold tracking-[0.06em] leading-none">HOMEBASE</div>
+              <div className="text-[9px] tracking-[0.42em] uppercase text-taupe mt-[3px]">Supply</div>
             </Link>
           </div>
         </header>
@@ -59,8 +59,8 @@ export default function OrderDetail({ order }: { order: BackendOrder | null }) {
       <header className="border-b border-coffee/15 bg-cream">
         <div className="max-w-[1200px] mx-auto px-10 h-[78px] flex items-center justify-between">
           <Link href="/" className="text-left no-underline text-ink">
-            <div className="font-display text-[22px] font-semibold tracking-[0.06em] leading-none">MASON SKY</div>
-            <div className="text-[9px] tracking-[0.42em] uppercase text-taupe mt-[3px]">Enterprises</div>
+            <div className="font-display text-[22px] font-semibold tracking-[0.06em] leading-none">HOMEBASE</div>
+            <div className="text-[9px] tracking-[0.42em] uppercase text-taupe mt-[3px]">Supply</div>
           </Link>
           <Link href="/shop" className="text-[11.5px] tracking-[0.1em] uppercase text-coffee no-underline hover:opacity-60">
             Continue shopping

@@ -123,8 +123,8 @@ export default function CheckoutPage() {
         <header className="border-b border-coffee/15 bg-cream">
           <div className="max-w-[1200px] mx-auto px-10 h-[78px] flex items-center justify-between">
             <Link href="/" className="text-left no-underline text-ink">
-              <div className="font-display text-[22px] font-semibold tracking-[0.06em] leading-none">MASON SKY</div>
-              <div className="text-[9px] tracking-[0.42em] uppercase text-taupe mt-[3px]">Enterprises</div>
+              <div className="font-display text-[22px] font-semibold tracking-[0.06em] leading-none">HOMEBASE</div>
+              <div className="text-[9px] tracking-[0.42em] uppercase text-taupe mt-[3px]">Supply</div>
             </Link>
           </div>
         </header>
@@ -152,8 +152,8 @@ export default function CheckoutPage() {
       <header className="border-b border-coffee/15 bg-cream">
         <div className="max-w-[1200px] mx-auto px-10 h-[78px] flex items-center justify-between">
           <Link href="/" className="text-left no-underline text-ink">
-            <div className="font-display text-[22px] font-semibold tracking-[0.06em] leading-none">MASON SKY</div>
-            <div className="text-[9px] tracking-[0.42em] uppercase text-taupe mt-[3px]">Enterprises</div>
+            <div className="font-display text-[22px] font-semibold tracking-[0.06em] leading-none">HOMEBASE</div>
+            <div className="text-[9px] tracking-[0.42em] uppercase text-taupe mt-[3px]">Supply</div>
           </Link>
           <div className="flex items-center gap-[9px] text-[11.5px] tracking-[0.1em] uppercase text-coffee-3">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#5C4733" strokeWidth="1.5">

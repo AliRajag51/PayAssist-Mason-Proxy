@@ -6,7 +6,7 @@ export default function PrivacyPage() {
   return (
     <ContentPage eyebrow="Legal" title="Privacy policy">
       <p>
-        This policy describes how Mason Sky Enterprises (&ldquo;we&rdquo;, &ldquo;us&rdquo;)
+        This policy describes how HomeBase Supply (&ldquo;we&rdquo;, &ldquo;us&rdquo;)
         collects, uses and protects information you share with us through this site. Last updated
         June 2026.
       </p>
@@ -32,11 +32,11 @@ export default function PrivacyPage() {
       <h2>Your rights</h2>
       <p>
         You can ask for a copy of your data, ask us to correct it, or ask us to delete it at any
-        time. Write to <strong>privacy@masonsky.co</strong>.
+        time. Write to <strong>privacy@homebasesupply.com</strong>.
       </p>
       <h2>Contact</h2>
       <p>
-        Questions about this policy? <strong>privacy@masonsky.co</strong>.
+        Questions about this policy? <strong>privacy@homebasesupply.com</strong>.
       </p>
     </ContentPage>
   );

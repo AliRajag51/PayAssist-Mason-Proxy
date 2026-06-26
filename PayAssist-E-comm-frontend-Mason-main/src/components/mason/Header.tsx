@@ -36,8 +36,8 @@ export function Header({ cartCount, activeNav, onCartClick, cartHref }: HeaderPr
           <Link href="/shop?category=storage" className={linkCls("storage")}>Storage</Link>
         </nav>
         <Link href="/" className="text-center no-underline text-ink">
-          <div className="font-display text-[23px] font-semibold tracking-[0.06em] leading-none">MASON SKY</div>
-          <div className="text-[9px] tracking-[0.42em] uppercase text-taupe mt-[3px]">Enterprises</div>
+          <div className="font-display text-[23px] font-semibold tracking-[0.06em] leading-none">HOMEBASE</div>
+          <div className="text-[9px] tracking-[0.42em] uppercase text-taupe mt-[3px]">Supply</div>
         </Link>
         <div className="flex gap-[22px] items-center justify-end text-ink">
           <Link href="/shop" className="flex text-ink no-underline transition-colors duration-[250ms] hover:text-coffee" aria-label="Search">

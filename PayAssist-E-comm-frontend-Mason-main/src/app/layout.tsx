@@ -34,8 +34,8 @@ const manrope = Manrope({
 
 export const metadata: Metadata = {
   title: {
-    default: "Mason Sky Enterprises — Considered objects for the modern home",
-    template: "Mason Sky — %s",
+    default: "HomeBase Supply — Considered objects for the modern home",
+    template: "HomeBase Supply — %s",
   },
   description:
     "Considered objects, lighting and accessories for the modern home — small things, beautifully made.",

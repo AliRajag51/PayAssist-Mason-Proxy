@@ -1,9 +1,9 @@
-/* MASON SKY — Tailwind v4 design system.
+/* HOMEBASE SUPPLY — Tailwind v4 design system.
    - Tokens live in @theme (colors, fonts, animations, custom utilities).
    - The classic v3 setup from `tailwind.config.ts` is intentionally NOT used; v4
      reads tokens straight from this CSS file.
-   - Preflight stays on (v4 includes it by default — Mason's small reset overrides
-     where it needs to). */
+   - Preflight stays on (v4 includes it by default — HomeBase Supply's small reset
+     overrides where it needs to). */
 @import "tailwindcss";
 
 @theme {
@@ -70,7 +70,7 @@
 }
 
 @layer components {
-  /* Reusable form field — used across checkout. Mason's only shared component class. */
+  /* Reusable form field — used across checkout. HomeBase Supply's only shared component class. */
   .ms-field {
     width: 100%;
     background: #fff;

@@ -6,8 +6,8 @@ export function Footer() {
       <div className="max-w-[1360px] mx-auto">
         <div className="grid grid-cols-[1.6fr_1fr_1fr_1fr] gap-12 pb-14 border-b border-taupe/20">
           <div>
-            <div className="font-display text-2xl font-semibold tracking-[0.06em] text-cream">MASON SKY</div>
-            <div className="text-[9px] tracking-[0.42em] uppercase text-coffee-3 mt-1 mb-[22px]">Enterprises</div>
+            <div className="font-display text-2xl font-semibold tracking-[0.06em] text-cream">HOMEBASE</div>
+            <div className="text-[9px] tracking-[0.42em] uppercase text-coffee-3 mt-1 mb-[22px]">Supply</div>
             <p className="font-serif text-[18px] leading-[1.55] text-taupe max-w-[300px]">
               Furniture and home goods made to be lived with — and handed down.
             </p>
@@ -40,7 +40,7 @@ export function Footer() {
           </div>
         </div>
         <div className="flex justify-between items-center pt-7 flex-wrap gap-[14px] text-[11.5px] tracking-[0.04em] text-coffee-3">
-          <div>© 2026 Mason Sky Enterprises. All rights reserved.</div>
+          <div>© 2026 HomeBase Supply. All rights reserved.</div>
           <div className="flex gap-[26px]">
             <Link href="/privacy" className="text-coffee-3 no-underline transition-colors duration-[250ms] hover:text-taupe">Privacy</Link>
             <Link href="/terms" className="text-coffee-3 no-underline transition-colors duration-[250ms] hover:text-taupe">Terms</Link>
@@ -56,10 +56,10 @@ export function FooterSlim() {
     <footer className="bg-ink-2 text-taupe pt-16 pb-9 px-10 mt-auto">
       <div className="max-w-[1360px] mx-auto flex justify-between items-center flex-wrap gap-5">
         <div>
-          <div className="font-display text-[22px] font-semibold tracking-[0.06em] text-cream">MASON SKY</div>
-          <div className="text-[9px] tracking-[0.42em] uppercase text-coffee-3 mt-1">Enterprises</div>
+          <div className="font-display text-[22px] font-semibold tracking-[0.06em] text-cream">HOMEBASE</div>
+          <div className="text-[9px] tracking-[0.42em] uppercase text-coffee-3 mt-1">Supply</div>
         </div>
-        <div className="text-[11.5px] tracking-[0.04em] text-coffee-3">© 2026 Mason Sky Enterprises. All rights reserved.</div>
+        <div className="text-[11.5px] tracking-[0.04em] text-coffee-3">© 2026 HomeBase Supply. All rights reserved.</div>
       </div>
     </footer>
   );

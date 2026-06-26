@@ -288,11 +288,11 @@ export default function HomePage() {
         );
       })()}
 
-      {/* 7. WHY MASON SKY */}
+      {/* 7. WHY HOMEBASE SUPPLY */}
       <section className="bg-ink text-sand-2 py-24">
         <div className="max-w-[1360px] mx-auto px-10">
           <div data-reveal className="text-center mb-[62px]">
-            <div className="text-[11.5px] tracking-[0.32em] uppercase text-taupe mb-4">Why Mason Sky</div>
+            <div className="text-[11.5px] tracking-[0.32em] uppercase text-taupe mb-4">Why HomeBase Supply</div>
             <h2 className="font-display font-medium text-[clamp(28px,3.4vw,42px)] tracking-[-0.01em] text-cream">A standard you can feel</h2>
           </div>
           <div className="grid grid-cols-4 gap-12">
@@ -364,7 +364,7 @@ export default function HomePage() {
       <section className="relative py-[118px] px-10 text-center overflow-hidden bg-sand-2">
         <div data-reveal className="relative max-w-[560px] mx-auto">
           <div className="text-[11.5px] tracking-[0.32em] uppercase text-coffee-4 mb-[18px]">Stay in touch</div>
-          <h2 className="font-display font-medium text-[clamp(30px,3.6vw,44px)] tracking-[-0.01em] text-ink leading-[1.1]">Join the Mason Sky list</h2>
+          <h2 className="font-display font-medium text-[clamp(30px,3.6vw,44px)] tracking-[-0.01em] text-ink leading-[1.1]">Join the HomeBase Supply list</h2>
           <p className="font-serif text-[21px] leading-[1.5] text-coffee mt-[18px] mb-9">Early access to new collections, styling notes and private sales. No noise.</p>
           <form onSubmit={subscribe} className="flex max-w-[440px] mx-auto border-b border-coffee">
             <input

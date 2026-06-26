@@ -12,7 +12,7 @@ export default function ReturnsPage() {
       </p>
       <h2>How to start a return</h2>
       <p>
-        Write to <strong>returns@masonsky.co</strong> with your order number and a one-line note
+        Write to <strong>returns@homebasesupply.com</strong> with your order number and a one-line note
         about which piece is going back. We&apos;ll email you a prepaid shipping label within one
         business day.
       </p>
@@ -32,7 +32,7 @@ export default function ReturnsPage() {
       <p>
         Made-to-order pieces (noted on the product page) are non-returnable. If something arrives
         damaged or faulty, we&apos;ll replace it at no cost — please send a photo to{" "}
-        <strong>hello@masonsky.co</strong> within 7 days of delivery.
+        <strong>hello@homebasesupply.com</strong> within 7 days of delivery.
       </p>
       <h2>Damaged in transit</h2>
       <p>

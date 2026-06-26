@@ -6,7 +6,7 @@ export default function TermsPage() {
   return (
     <ContentPage eyebrow="Legal" title="Terms of service">
       <p>
-        By using masonsky.co you agree to these terms. They&apos;re short and written in plain
+        By using homebasesupply.com you agree to these terms. They&apos;re short and written in plain
         English. Last updated June 2026.
       </p>
       <h2>Orders</h2>
@@ -29,7 +29,7 @@ export default function TermsPage() {
       </p>
       <h2>Intellectual property</h2>
       <p>
-        Site content — photography, copy, and design — is © 2026 Mason Sky Enterprises. Don&apos;t
+        Site content — photography, copy, and design — is © 2026 HomeBase Supply. Don&apos;t
         republish, scrape or resell it without our written permission.
       </p>
       <h2>Liability</h2>
@@ -44,7 +44,7 @@ export default function TermsPage() {
       </p>
       <h2>Contact</h2>
       <p>
-        <strong>hello@masonsky.co</strong> for any question about these terms.
+        <strong>hello@homebasesupply.com</strong> for any question about these terms.
       </p>
     </ContentPage>
   );

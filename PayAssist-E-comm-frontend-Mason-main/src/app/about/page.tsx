@@ -6,7 +6,7 @@ export default function AboutPage() {
   return (
     <ContentPage eyebrow="Our story" title="A considered home, made simple">
       <p>
-        Mason Sky Enterprises was founded around a simple idea — that the home should be filled with
+        HomeBase Supply was founded around a simple idea — that the home should be filled with
         objects you genuinely love to live with, made by people who care how they&apos;re made. We
         work with a small set of independent makers to bring together considered furniture, lighting,
         ceramics and textiles for the modern home.
@@ -25,7 +25,7 @@ export default function AboutPage() {
       <h2>Where to find us</h2>
       <p>
         We&apos;re online today, with our studio in New York. Visits are by appointment — please
-        write to <strong>hello@masonsky.co</strong> if you&apos;d like to come see something in person.
+        write to <strong>hello@homebasesupply.com</strong> if you&apos;d like to come see something in person.
       </p>
     </ContentPage>
   );

@@ -35,7 +35,7 @@ export default function ShippingPage() {
       <h2>Tracking</h2>
       <p>
         You&apos;ll receive a tracking number by email as soon as your order leaves the studio. If
-        you need it sooner, just write to <strong>hello@masonsky.co</strong>.
+        you need it sooner, just write to <strong>hello@homebasesupply.com</strong>.
       </p>
     </ContentPage>
   );

@@ -11,22 +11,22 @@ export default function ContactPage() {
       </p>
       <h2>Customer care</h2>
       <p>
-        <strong>hello@masonsky.co</strong><br />
+        <strong>hello@homebasesupply.com</strong><br />
         Mon–Fri, 9am–6pm Eastern
       </p>
       <h2>Trade &amp; styling</h2>
       <p>
         Designers and stylists, we&apos;d love to hear from you. Write to{" "}
-        <strong>trade@masonsky.co</strong> with a short note about your project and we&apos;ll come
+        <strong>trade@homebasesupply.com</strong> with a short note about your project and we&apos;ll come
         back to you with our trade terms.
       </p>
       <h2>Press</h2>
       <p>
-        For press, partnerships and stockist enquiries: <strong>press@masonsky.co</strong>.
+        For press, partnerships and stockist enquiries: <strong>press@homebasesupply.com</strong>.
       </p>
       <h2>Our studio</h2>
       <p>
-        Mason Sky Enterprises<br />
+        HomeBase Supply<br />
         100 Considered Lane, Studio 4<br />
         Brooklyn, NY 11211<br />
         United States

@@ -8,10 +8,11 @@ without a plan, and don't touch unrelated files.
 
 ## Project context
 
-This is the **MASON SKY** customer storefront — Mason Sky Enterprises'
+This is the **HOMEBASE SUPPLY** customer storefront — HomeBase Supply's
 considered objects, lighting and accessories for the home. It was built by
-porting the existing Mason UI (originally a stand-alone Next 15 + Tailwind 3
-project under `Desgin Guide/Mason Sky Enterprises design/`) onto the **Sona
+porting the existing UI (originally a stand-alone Next 15 + Tailwind 3
+project under `Desgin Guide/Mason Sky Enterprises design/` — the design source
+folder still carries the original "Mason Sky" name on disk) onto the **Sona
 storefront scaffold** so both stores share configs, libs, the deployment
 shape, and the PayAssist backend contract.
 
@@ -23,12 +24,12 @@ shape, and the PayAssist backend contract.
   Tokens declared in `@theme` (colors, fonts, animation utilities), small base
   reset in `@layer base`, the `.ms-field` form field class in
   `@layer components`. **No `tailwind.config.*` file — v4 reads from CSS.**
-  Mason JSX uses Tailwind utilities directly with `bg-cream`, `text-ink`,
+  Storefront JSX uses Tailwind utilities directly with `bg-cream`, `text-ink`,
   `font-display`, `animate-kenburns`, etc.
-- **UI is final.** The Mason UI was ported 1:1 from the design source and is the
-  authoritative visual. Do not redesign it, do not introduce a second styling
-  system (e.g. shadcn) — it would alter the look.
-- **State (Phase 1):** Mason ships with a local `useCart` hook
+- **UI is final.** The HomeBase Supply UI was ported 1:1 from the design source
+  and is the authoritative visual. Do not redesign it, do not introduce a second
+  styling system (e.g. shadcn) — it would alter the look.
+- **State (Phase 1):** the storefront ships with a local `useCart` hook
   (`src/components/mason/useCart.ts`) and mock products
   (`src/components/mason/products.ts`). Cart persists to localStorage under
   `ms_cart`.
@@ -46,7 +47,7 @@ Mirror Sona exactly:
 
 1. In `src/app/layout.tsx`, `await fetchProducts()` (server) and pass the result
    down through a `CatalogProvider` (port from Sona's `catalog-context.tsx`).
-2. Replace Mason's local `useCart` with a `cart-context.tsx` modeled on Sona's
+2. Replace the local `useCart` with a `cart-context.tsx` modeled on Sona's
    — same `CartItem` shape (`{ id, sku, name, price, img, type, cat, qty }`)
    so `buildOrderPayload` consumes it directly.
 3. On `/checkout`, swap the static fake card inputs for Stripe Payment Element
@@ -111,4 +112,4 @@ targeted; prefer existing patterns and the design tokens over ad-hoc values.
   treat as read-only.
 - Shared PayAssist backend: `../PayAssist-E-comm-Backend-main` — read-only.
 - Shared admin: `../PayAssist-E-comm-Admin-main` — read-only.
-- The original static Mason UI source: `../Desgin Guide/Mason Sky Enterprises design/`.
+- The original static UI source (legacy folder name): `../Desgin Guide/Mason Sky Enterprises design/`.
